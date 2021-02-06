@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Roee Ebenstein - Home Page</title>
+		<link rel="stylesheet" type="text/css" href="menu.css">
+		<style type="text/css">
+			<!--
+			div#wrapper {
+				text-align: center;
+				margin-left: auto;
+				margin-right: auto;
+				width: 80%;
+			}
+			.contact {
+				padding-top: 2em;
+				padding-right: 10%;
+			}
+			.content {
+				padding: 1em;
+				text-align: left;
+				clear: both;
+			}
+			.photo {
+				padding-left: 10%;
+				padding-right: 10%;
+				float: left;
+			};
+			#title {
+				font-style: italic;
+			}
+			p
+			{
+				margin-right:0in;
+				margin-left:0in;
+			}
+			li
+			{
+				margin-left: 1em;
+				padding:0em 1em 1em;
+			}
+			-->
+		</style>
+    </head>
+    <body>
+	    <ul class="menu1">
+			<li><a href="index.htm">Home</a></li>
+			<li><a href="research.html">Research</a></li>
+			<li><a href="favpap.html">Favorite Papers</a></li>
+			<li><a href="oracle.html">Oracle</a></li>
+		</ul>
+		<br><br>
+		<div id="wrapper">
+			<div class="photo"><img src="Roee.jpg" alt="Roee Ebenstein"/></div>
+			<div class="contact">
+				<h1>Dr. Roee Ebenstein</h1>
+				<p>
+				[lastname].2[where?]osu.edu
+				</p>
+			</div>
+            <div class="content">
+
+                <h2>Research</h2>
+                <p>
+                    HPC:<br>
+                    My current focus is on integration of HPC with DBMS concepts for data intensive computations.<br>
+                    I focus on making scientific array data available using declarative language and advanced query processing capabilities.
+                </p>
+                <p>
+                    DB:<br>
+                    My work with <a href="http://db.cse.ohio-state.edu" target="_blank"> the OSU DB Research Group</a> relates to interactive DBMS engines.<br>
+                    We explore the affect interactive databases have on the DB Engine design. <br />
+                    For this research area, I developed a database engine (storage component and execution engine) that is able to satisfy our (high) performance needs for interactive queries.  <br>
+                </p>
+                <p>
+                    AI:<br>
+                    I developed an efficient hand detection and tracking algorithm/mechanism. It is implemented within an iPhone app.<br>
+                    The whole purpose of this work was to explore efficient ways to detect objects on devices with limited processing abilites.<br><br>
+                    In addition, I worked on improving sampling performance over a Bayesian Network with all discrete distributions.
+                </p>
+
+
+                <h2>Dissertation</h2>
+                <!-- <a href="">Read the dissertation</a><br /> -->
+                The dissertation will be available to read soon, after formally published by The Ohio State University.<br />
+                In the dissertation you will find all the work I have completed as part of the Ph.D. program.
+                A few of my published works has been done "for fun", and were not counted towards the degree.
+
+                <h2>Publications / Research Work</h2>
+
+                <p>2018 - In Submission...</p>
+                <ul class="publications" style="padding-left:0em">
+                    <li>
+                        Sckeow: An Optimizer for Multi-Level Join Execution of Skewed and Distributed Array Data (Roee Ebenstein, Gagan Agrawal)<br>
+                        In this work we target the optimization of join queries over data that becomes skewed during query execution. <br>
+                        We introduce a new execution and optimization approach for distributed querying of such queries (our approach generates an ideal execution plan directly, in most cases, decreasing the query evaluation effort).
+                    </li>
+                    <li>
+                        FDQ: Advance Analytics over Real Scientific Array Datasets (Roee Ebenstein, Gagan Agrawal)<br>
+                        In this work we introduce analytical functions over scientific array data. <br>
+                        While introducing the new functionality, we thoroughly discuss method for efficient (distributed) execution of the new type of queries.
+                    </li>
+                    <li>
+                        BitJoin: Executing Range Based Joins in Distributed Environments (Roee Ebenstein, Gagan Agrawal)<br>
+                        In this work we developed an efficient mechanism to execute joins with range based join criteria.<br>
+                        We use modified structure of BitMap indexes with WAH compression.
+                    </li>
+                </ul>
+                <p>2017</p>
+                <ul class="publications" style="padding-left:0em">
+                    <li>
+                        <a href="https://dl.acm.org/citation.cfm?id=3085529">DistriPlan - An Optimized Join Execution Framework for Geo-Distributed Scientific Data (Roee Ebenstein, Gagan Agrawal, SSDBM 2017)</a><br>
+                        In this work we have developed a cost based scheme for optimization of data movement for query execution in distributed environments.<br>
+                        The system include data movement cost and penalties for networking and mechanisms to prune data movement options, which results in realistic and practical option spanning for distribution analysis and cost evaluation. <br>
+                    </li>
+                </ul>
+                <p>2016</p>
+                <ul class="publications" style="padding-left:0em">
+                    <li>
+                        <a href="http://dl.acm.org/citation.cfm?id=2882945&CFID=633736904&CFTOKEN=50191384">FluxQuery: An Execution Framework for Highly Interactive Query Workloads (Roee Ebenstein, Niranjan Kamat, Aranb Nandi, SIGMOD 2016)</a><br>
+                        In this paper we discuss modifications of a DBMS engine to support highly interactive workloads. <br>
+                        We develop a new cyclic scan engine for joins, and present two new novel join algorithms that are intended to provide results in interactive time frames.
+                    </li>
+                </ul>
+                <p>2015</p>
+                <ul class="publications" style="padding-left:0em">
+                    <li>
+                        <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7363790">DSDQuery DSI - Querying Scientific Data Repositories with Structured Operators (Roee Ebenstein, Gagan Agrawal, IEEE BigData 2015).</a><br>
+                        In this paper we discuss querying a distributed scientific array using declarative languages.<br>
+                        The engine that we expanded to support these features is SDQuery DSI.
+                    </li>
+                </ul>
+                <p>2014</p>
+                <ul class="publications" style="padding-left:0em">
+                    <li>
+                        <a href="SepLog.pdf">SepLog - separating the log component from the DBMS engine.</a> - This is an internal work as part of Spyros Blanas research seminar.<br>
+                        In this work I show that log separation from the DBMS engine results in better performance, and claim it would not sacrifice the DBMS consistency/durability.<br>
+                        This work will not be published in a conference or journal, but only within OSU.
+                    </li>
+                </ul>
+            </div>
+		</div>
+    </body>
+</html>
